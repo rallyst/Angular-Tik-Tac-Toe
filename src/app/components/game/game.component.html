@@ -1,6 +1,12 @@
-<div class="game-container">
-  <div class="game-board">
+<h2 >Player Turn: {{ player_turn }}</h2>
 
+<div class="game-container">
+ 
+  <div class="game-board">
+    <div 
+    class="square" 
+    *ngFor="let square of board; let i = index"
+    (click)="handlePlayer(i)">{{ square }}</div>
   </div>
 
   <div class="circle"></div>

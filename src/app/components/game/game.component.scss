@@ -13,8 +13,36 @@
   background: linear-gradient(to right bottom,
     rgba(255, 255, 255, .8),
     rgba(255, 255, 255, .3));
-    backdrop-filter: blur(.4rem);
-    z-index: 3;
+  backdrop-filter: blur(.4rem);
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 18px;
+}
+
+.square {
+  width: 99%;
+  height: 99%;
+  border: 2px solid white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.square:hover {
+  cursor: pointer;
+  background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, .8),
+    rgba(255, 255, 255, .3));
+  backdrop-filter: blur(.4rem);
+}
+
+h2 {
+  position: absolute;
+  top: 5%;
+  left: 100px;
 }
 
 .circle,
